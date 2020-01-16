@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor="let post of posts | async">
+    <div class="card">
+      <div class="card-body">
+        <p class="id">
+          <small>ID: {{ post.id }}</small>
+        </p>
+        <p>{{ post.text }}</p>
+        <a class="btn btn-danger btn-small" (click)="removePost(post.id)"
+          >Eliminar</a
+        >
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="alert alert-danger" *ngIf="(posts | async).length == 0">
+  Sin Posts :(
+</div>
