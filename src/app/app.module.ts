@@ -25,6 +25,9 @@ import { ContenedorPostsComponent } from "./modules/views/contenedor-posts/conte
 import { environment } from "src/environments/environment";
 import { PostsState } from "./store/posts/posts.state";
 
+import { ScrollingModule } from "@angular/cdk/scrolling";
+import { VirtualScrollComponent } from './modules/views/virtual-scroll/virtual-scroll.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,13 +38,15 @@ import { PostsState } from "./store/posts/posts.state";
     I18nAngularComponent,
     ListarPostsComponent,
     NuevoPostComponent,
-    ContenedorPostsComponent
+    ContenedorPostsComponent,
+    VirtualScrollComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ScrollingModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
