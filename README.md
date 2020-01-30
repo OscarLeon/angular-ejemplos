@@ -2,7 +2,7 @@
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/OscarLeon/README-template.md)
+![GitHub repo size](https://img.shields.io/github/repo-size/OscarLeon/angular-ejemplos)
 
 Angular Ejemplos es un proyecto abierto a la comunidad que permite a los desarrolladores comprender de mejor manera cómo operan ciertas funcionalidades del framework Angular.
 
