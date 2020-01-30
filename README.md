@@ -1,12 +1,19 @@
-# Project name
+# Angular Ejemplos
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
+![GitHub repo size](https://img.shields.io/github/repo-size/OscarLeon/README-template.md)
 
-Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+Angular Ejemplos es un proyecto abierto a la comunidad que permite a los desarrolladores comprender de mejor manera cómo operan ciertas funcionalidades del framework Angular.
 
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
+Los ejemplos que veras aqui son:
+
+<!--- These are just example requirements. Add, duplicate or remove as required --->
+
+- Uso de ChartJS
+- Uso de i18n(Internacionalización)
+- Uso de NGXS para manejar el estado de una aplicación Angular
+- Uso de Virtual Scrolling
 
 ## Prerequisites
 
