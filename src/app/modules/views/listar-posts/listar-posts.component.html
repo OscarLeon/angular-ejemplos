@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let post of posts | async">
+  <li *ngFor="let post of postsArray">
     <div class="card">
       <div class="card-body">
         <p class="id">
@@ -13,6 +13,6 @@
     </div>
   </li>
 </ul>
-<div class="alert alert-danger" *ngIf="(posts | async).length == 0">
+<div class="alert alert-danger" *ngIf="postsArray.length === 0">
   Sin Posts :(
 </div>

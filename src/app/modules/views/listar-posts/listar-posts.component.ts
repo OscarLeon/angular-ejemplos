@@ -7,13 +7,19 @@ import { RemovePost } from "./../../../store/posts/posts.actions";
 @Component({
   selector: "app-listar-posts",
   templateUrl: "./listar-posts.component.html",
-  styleUrls: ["./listar-posts.component.sass"]
+  styleUrls: ["./listar-posts.component.sass"],
 })
 export class ListarPostsComponent implements OnInit {
-  public posts: Observable<Posts>;
+  public posts: Observable<any>;
+  public postsArray: Array<any>;
 
   constructor(private store: Store) {
-    this.posts = this.store.select(state => state.posts.posts);
+    this.posts = this.store.select((state) => state.posts.posts);
+    this.posts.subscribe((response) => {
+      this.postsArray = response;
+      console.log("response: ", response);
+    });
+    console.log("this.posts: ", this.posts);
   }
 
   ngOnInit() {}
