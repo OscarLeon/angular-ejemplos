@@ -1,0 +1,171 @@
+.green-color {
+  color: #2d8c2a;
+}
+
+.gray-title-color {
+  color: #717d82;
+}
+
+.gray-sub-title-color {
+  color: #717d82;
+}
+
+.border-50 {
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 20px;
+}
+
+.border-green {
+  border-color: green;
+}
+
+.border-red {
+  border-color: red;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.margin-left {
+  --margin-left: 420px;
+}
+
+.margin-right {
+  --margin-right: 420px;
+}
+
+.text-left {
+  margin-right: 50px;
+}
+
+.text-right {
+  margin-right: 50px;
+}
+
+.flex-box-direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.button {
+  background-color: #2d8c2a; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 30px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.container-top {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  .img-pos-right {
+    text-align: right;
+    z-index: 0;
+  }
+
+  .img-pos-left {
+    text-align: left;
+  }
+
+  .img-pos-top-left {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    z-index: -1;
+  }
+
+  .titles {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+
+    .title-size-45 {
+      font-size: 45px;
+    }
+
+    .pos-left {
+      text-align: left;
+    }
+
+    .pos-right {
+      text-align: right;
+      margin-left: 200px;
+    }
+  }
+
+  .sub-titles {
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    text-align: justify;
+
+    .sub-title-size-34 {
+      font-size: 20px;
+    }
+  }
+}
+
+.container-bottom {
+  margin-top: 75px;
+  text-align: center;
+
+  .titles {
+    margin-bottom: 25px;
+    .title-size-34 {
+      font-size: 28px;
+    }
+
+    .info-character {
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+
+.name-character {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.feature-title {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.circle {
+  background: #2e76cd;
+  --width: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 1px 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.color-skyblue{
+  color: #2e76cd;;
+}

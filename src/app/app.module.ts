@@ -26,7 +26,8 @@ import { environment } from "src/environments/environment";
 import { PostsState } from "./store/posts/posts.state";
 
 import { ScrollingModule } from "@angular/cdk/scrolling";
-import { VirtualScrollComponent } from './modules/views/virtual-scroll/virtual-scroll.component';
+import { VirtualScrollComponent } from "./modules/views/virtual-scroll/virtual-scroll.component";
+import { ChallengerBciComponent } from "./modules/views/challenger-bci/challenger-bci.component";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { VirtualScrollComponent } from './modules/views/virtual-scroll/virtual-s
     ListarPostsComponent,
     NuevoPostComponent,
     ContenedorPostsComponent,
-    VirtualScrollComponent
+    VirtualScrollComponent,
+    ChallengerBciComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,22 +55,22 @@ import { VirtualScrollComponent } from './modules/views/virtual-scroll/virtual-s
         useFactory: (http: HttpClient) => {
           return new TranslateHttpLoader(http);
         },
-        deps: [HttpClient]
-      }
+        deps: [HttpClient],
+      },
     }),
 
     // NGXS
     NgxsModule.forRoot([PostsState], {
-      developmentMode: !environment.production
+      developmentMode: !environment.production,
     }),
     NgxsReduxDevtoolsPluginModule.forRoot({
-      disabled: environment.production
+      disabled: environment.production,
     }),
     NgxsLoggerPluginModule.forRoot({
-      disabled: environment.production
-    })
+      disabled: environment.production,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

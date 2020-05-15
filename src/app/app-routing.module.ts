@@ -5,32 +5,37 @@ import { ChartJsComponent } from "./modules/views/chart-js/chart-js.component";
 import { I18nAngularComponent } from "./modules/views/i18n-angular/i18n-angular.component";
 import { ContenedorPostsComponent } from "./modules/views/contenedor-posts/contenedor-posts.component";
 import { VirtualScrollComponent } from "./modules/views/virtual-scroll/virtual-scroll.component";
+import { ChallengerBciComponent } from "./modules/views/challenger-bci/challenger-bci.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: "chartjs",
-    component: ChartJsComponent
+    component: ChartJsComponent,
   },
   {
     path: "i18n-angular",
-    component: I18nAngularComponent
+    component: I18nAngularComponent,
   },
   {
     path: "ngxs-example",
-    component: ContenedorPostsComponent
+    component: ContenedorPostsComponent,
   },
   {
     path: "virtual-scroll",
-    component: VirtualScrollComponent
-  }
+    component: VirtualScrollComponent,
+  },
+  {
+    path: "challenger-bci",
+    component: ChallengerBciComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

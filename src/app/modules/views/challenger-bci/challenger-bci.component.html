@@ -1,0 +1,106 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-top">
+  <div class="img-pos-right">
+    <img src="./../assets/images/star-wars.png" alt="Star Wars" />
+  </div>
+
+  <div class="img-pos-top-left">
+    <img
+      width="150"
+      height="150"
+      src="./../assets/images/logo-bci.jpg"
+      alt="Logo Banco BCI"
+    />
+  </div>
+
+  <div class="titles title-size-45">
+    <div class="title-size-45 pos-left gray-title-color">Star Wars</div>
+    <div class="title-size-45 pos-right green-color">Characters</div>
+  </div>
+
+  <div class="sub-titles">
+    <p class="sub-title-size-34 gray-sub-title-color">
+      Star Wars es una franquicia compuesta primordialmente de <br />
+      una serie de peliculas concebidas por el cineasta <br />
+      estadounidense George Lucas
+    </p>
+    <button class="button">SABER MÁS</button>
+  </div>
+</div>
+
+<div class="container-bottom">
+  <h6>Pelotitas BCI</h6>
+  <div class="titles title-size-34">
+    <div class="title-size-34 gray-title-color">Personajes de Star Wars</div>
+  </div>
+  <div class="flex-box-direction gray-sub-title-color">
+    <div class="text-left">
+      <img
+        class="border-50 border-green margin-left"
+        src="./../assets/images/luke.jpg"
+        alt="Luke"
+        width="150"
+        height="150"
+      />
+      <div class="info-character">
+        <div class="name-character">{{ characterLuke.name }}</div>
+        <div class="d-inline-block">
+          <div>
+            <div class="feature-title">Estatura</div>
+            <div>{{ characterLuke.height }} cms</div>
+          </div>
+          <div>
+            <div class="feature-title">Planeta</div>
+            <div>{{ characterLuke.homeworld }}</div>
+          </div>
+        </div>
+
+        <div class="feature-title">Naves</div>
+        <div
+          class="naves-character"
+          *ngFor="let nav of characterLuke.starships"
+        >
+          <span>{{ nav }}</span>
+        </div>
+      </div>
+      <a class="color-skyblue" href="#"
+        >CONOCE MAS <span class="circle">></span></a
+      >
+    </div>
+
+    <div class="text-right">
+      <img
+        class="border-50 border-red margin-right"
+        src="./../assets/images/darth-vader.jpg"
+        alt="Darth Vader"
+        width="150"
+        height="150"
+      />
+      <div class="info-character">
+        <div class="name-character">{{ characterDarthVader.name }}</div>
+        <div class="d-inline-block">
+          <div>
+            <div class="feature-title">Estatura</div>
+            <div>{{ characterDarthVader.height }} cms</div>
+          </div>
+          <div>
+            <div class="feature-title">Planeta</div>
+            <div>{{ characterDarthVader.homeworld }}</div>
+          </div>
+        </div>
+
+        <div class="feature-title">Naves</div>
+        <div
+          class="naves-character"
+          *ngFor="let nav of characterDarthVader.starships"
+        >
+          <span>{{ nav }}</span>
+        </div>
+      </div>
+      <a class="color-skyblue" href="#"
+        >CONOCE MAS <span class="circle">></span></a
+      >
+    </div>
+  </div>
+  <h6>Pelotitas BCI</h6>
+</div>
