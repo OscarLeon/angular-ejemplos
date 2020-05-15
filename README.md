@@ -14,6 +14,7 @@ Los ejemplos que veras aqui son:
 - Uso de i18n(Internacionalización)
 - Uso de NGXS para manejar el estado de una aplicación Angular
 - Uso de Virtual Scrolling
+- Uso de landing en un Desafio Proyecto BCI
 
 ## Prerequisites
 
